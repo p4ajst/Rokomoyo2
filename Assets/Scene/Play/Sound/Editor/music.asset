@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4639da16c202d2642bc48d8ec77364f7, type: 3}
+  m_Name: music
+  m_EditorClassIdentifier: 
+  attractMusics:
+  - musicClip: {fileID: 8300000, guid: 816d76c9e7d5a524d80702a150d715da, type: 3}
+    musicName: "\u30D1\u30C3\u30D8\u30EB\u30D9\u30EB\u306E\u30AB\u30CE\u30F3"
+    composerName: "\u30D1\u30C3\u30D8\u30EB\u30D9\u30EB"
+  - musicClip: {fileID: 8300000, guid: 70f85adb016e83d448d055eb592974a8, type: 3}
+    musicName: "\uFF27\u7DDA\u4E0A\u306E\u30A2\u30EA\u30A2"
+    composerName: "\u30D0\u30C3\u30CF"
+  - musicClip: {fileID: 8300000, guid: 7b00cf40dccb97444a9f609c55a86060, type: 3}
+    musicName: "\u4E3B\u3088\u3001\u4EBA\u306E\u671B\u307F\u306E\u559C\u3073\u3088"
+    composerName: "\u30D0\u30C3\u30CF"
+  - musicClip: {fileID: 8300000, guid: 5045c3c4cd65da546b05465e99bf2ea6, type: 3}
+    musicName: "\u30DB\u30EB\u30F3\u5354\u594F\u66F2\u3000\u7B2C\uFF14\u756A\uFF5E\u7B2C\uFF13\u697D\u7AE0"
+    composerName: "\u30E2\u30FC\u30C4\u30A1\u30EB\u30C8"
+  - musicClip: {fileID: 8300000, guid: 495aa783a09ef2745a1574c942fb874d, type: 3}
+    musicName: "\u30C8\u30EB\u30B3\u884C\u9032\u66F2"
+    composerName: "\u30D9\u30FC\u30C8\u30FC\u30F4\u30A7\u30F3"
+  - musicClip: {fileID: 8300000, guid: 79a97cb9e23f4c941ad1aa4249016ec2, type: 3}
+    musicName: "\u30D4\u30A2\u30CE\u4E94\u91CD\u594F\u66F2\u300C\u307E\u3059\u300D\uFF5E\u7B2C\uFF14\u697D\u7AE0"
+    composerName: "\u30B7\u30E5\u30FC\u30D9\u30EB\u30C8"
+  - musicClip: {fileID: 8300000, guid: dac8f052f2ddaeb46afbc54de47ac3b0, type: 3}
+    musicName: "\u4E9C\u9EBB\u8272\u306E\u9AEA\u306E\u4E59\u5973"
+    composerName: "\u30C9\u30D3\u30E5\u30C3\u30B7\u30FC"
+  - musicClip: {fileID: 8300000, guid: 168d85c8220fa8e47b8745b8d3677515, type: 3}
+    musicName: "\u7F8E\u3057\u304F\u9752\u304D\u30C9\u30CA\u30A6"
+    composerName: "\u30E8\u30CF\u30F3\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9"
+  - musicClip: {fileID: 8300000, guid: bbffbbc59803e5b4299edfc341453126, type: 3}
+    musicName: "\u56DB\u5B63\u300C\u6625\u300D"
+    composerName: "\u30F4\u30A3\u30F4\u30A1\u30EB\u30C7\u30A3"
+  - musicClip: {fileID: 8300000, guid: 1b062f6d92dedfa438509b94b4bf0fe0, type: 3}
+    musicName: "\u30E6\u30FC\u30E2\u30EC\u30B9\u30AF"
+    composerName: "\u30C9\u30F4\u30A9\u30EB\u30B6\u30FC\u30AF"
+  - musicClip: {fileID: 8300000, guid: da526fd8740b77d49a64c0f88cd51d7b, type: 3}
+    musicName: "\u30E1\u30CC\u30A8\u30C3\u30C8\u3000\u30C8\u9577\u8ABF"
+    composerName: "\u30D0\u30C3\u30CF"
+  - musicClip: {fileID: 8300000, guid: 0b83beddb174645478ea284fd42a5a20, type: 3}
+    musicName: "\u30F4\u30A1\u30A4\u30AA\u30EA\u30F3\u30FB\u30BD\u30CA\u30BF\u300C\u6625\u300D\u7B2C\uFF11\u697D\u7AE0"
+    composerName: "\u30D9\u30FC\u30C8\u30FC\u30F4\u30A7\u30F3"
+  - musicClip: {fileID: 8300000, guid: b97944100ddf04445ae59a099b937e82, type: 3}
+    musicName: "\u884C\u9032\u66F2\u300C\u5A01\u98A8\u5802\u3005\u300D\u7B2C\uFF11\u756A"
+    composerName: "\u30A8\u30EB\u30AC\u30FC"
+  - musicClip: {fileID: 8300000, guid: 6d84dd34b2f2dc8428d5616197976644, type: 3}
+    musicName: "\u30E9\u30D7\u30BD\u30C7\u30A3\u30FC\u30FB\u30A4\u30F3\u30FB\u30D6\u30EB\u30FC"
+    composerName: "\u30AC\u30FC\u30B7\u30E5\u30A6\u30A3\u30F3"
+  - musicClip: {fileID: 8300000, guid: b00008eeb77f2bb4b877e5fcd2278630, type: 3}
+    musicName: "\u30D9\u30EB\u30AC\u30DE\u30B9\u30AF\u7D44\u66F2\u3088\u308A\u300C\u6708\u306E\u5149\u300D"
+    composerName: "\u30C9\u30D3\u30E5\u30C3\u30B7\u30FC"
+  - musicClip: {fileID: 8300000, guid: 24fe6b185bb12074b9def8f70098968c, type: 3}
+    musicName: "\u30A8\u30EA\u30FC\u30BC\u306E\u305F\u3081\u306B"
+    composerName: "\u30D9\u30FC\u30C8\u30FC\u30F4\u30A7\u30F3"
+  - musicClip: {fileID: 8300000, guid: 2cbc591141a061f48956104916686d47, type: 3}
+    musicName: "\u4E59\u5973\u306E\u7948\u308A"
+    composerName: "\u30D0\u30C0\u30B8\u30A7\u30D5\u30B9\u30AB"
+  - musicClip: {fileID: 8300000, guid: 0a9739a1a9576bf498903fe1b6b40fbf, type: 3}
+    musicName: "\u30A2\u30F4\u30A7\u30FB\u30DE\u30EA\u30A2"
+    composerName: "\u30D0\u30C3\u30CF\uFF0F\u30B0\u30CE\u30FC"
+  - musicClip: {fileID: 8300000, guid: 3fa4badcb49750a43a469efa0fa99fb5, type: 3}
+    musicName: "\u300C\u611B\u306E\u5922\u300D\u7B2C\uFF13\u756A"
+    composerName: "\u30EA\u30B9\u30C8"
+  - musicClip: {fileID: 8300000, guid: 0a8de6e5e20432946875be83dde6ebdf, type: 3}
+    musicName: "\u30D4\u30A2\u30CE\u30FB\u30BD\u30CA\u30BF\u7B2C\uFF11\uFF14\u756A\u5B30\u30CF\u77ED\u8ABF\u300C\u6708\u5149\u300D"
+    composerName: "\u30D9\u30FC\u30C8\u30FC\u30F4\u30A7\u30F3"
+  awayMusics:
+  - musicClip: {fileID: 8300000, guid: bb17c29f8a02bf242aee83cfcfeec259, type: 3}
+    musicName: "\u30AB\u30EB\u30E1\u30F3\u300C\u524D\u594F\u66F2\u300D"
+    composerName: "\u30D3\u30BC\u30FC"
+  - musicClip: {fileID: 8300000, guid: 5e124be96ede1664884b370546f2cc1f, type: 3}
+    musicName: "\u30A6\u30A3\u30EA\u30A2\u30E0\u30FB\u30C6\u30EB\u3000\u5E8F\u66F2"
+    composerName: "\u30ED\u30C3\u30B7\u30FC\u30CB"
+  - musicClip: {fileID: 8300000, guid: 1c6dc9df17c1fe744a82f524eb924ef3, type: 3}
+    musicName: "\u52D5\u7269\u306E\u8B1D\u8089\u796D\u300C\u6C34\u65CF\u9928\u300D"
+    composerName: "\u30B5\u30F3\uFF1D\u30B5\u30FC\u30F3\u30B9"
+  - musicClip: {fileID: 8300000, guid: b3d7f3c8d041d0246ad61fa1e000af8b, type: 3}
+    musicName: "\u30C4\u30A3\u30B4\u30A4\u30CD\u30EB\u30EF\u30A4\u30BC\u30F3"
+    composerName: "\u30B5\u30E9\u30B5\u30FC\u30C6"
+  - musicClip: {fileID: 8300000, guid: fdfd38e20e07e394eb4a925db9be7849, type: 3}
+    musicName: "\u4EA4\u97FF\u66F2 \u7B2C\uFF15\u756A\u300C\u904B\u547D\u300D"
+    composerName: "\u30D9\u30FC\u30C8\u30FC\u30F4\u30A7\u30F3"
+  - musicClip: {fileID: 8300000, guid: 98ef2ec662ce72c4e935c36a1e09c6c9, type: 3}
+    musicName: "\u30C8\u30C3\u30AB\u30FC\u30BF\u3068\u30D5\u30FC\u30AC\u3000\u30CB\u77ED\u8ABF"
+    composerName: "\u30D0\u30C3\u30CF"
+  - musicClip: {fileID: 8300000, guid: 2ca83f2944f1ded41be2e89f9b19f280, type: 3}
+    musicName: "\u30DC\u30EC\u30ED"
+    composerName: "\u30E9\u30F4\u30A7\u30EB"
+  - musicClip: {fileID: 8300000, guid: 01e1ddaf9975e5846bda54e1a91eb5f7, type: 3}
+    musicName: "\u30EF\u30EB\u30C4\u300C\u6625\u306E\u58F0\u300D"
+    composerName: "\u30E8\u30CF\u30F3\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9"
+  - musicClip: {fileID: 8300000, guid: b9bffad6eddd7ef4ea77a5d436b4f2aa, type: 3}
+    musicName: "\u30CF\u30F3\u30AC\u30EA\u30A2\u821E\u66F2\u7B2C\uFF15\u756A"
+    composerName: "\u30D6\u30E9\u30FC\u30E0\u30B9"
+  - musicClip: {fileID: 8300000, guid: de3414cce7c33d24cafb81530dcb5162, type: 3}
+    musicName: "\u56DB\u5B63\u300C\u590F\u300D"
+    composerName: "\u30F4\u30A3\u30F4\u30A1\u30EB\u30C7\u30A3"
+  - musicClip: {fileID: 8300000, guid: fa06425a38bd4a74d872da6b4df3ee33, type: 3}
+    musicName: "\u4EA4\u97FF\u66F2\u7B2C\uFF11\u756A\u300C\u5DE8\u4EBA\u300D\u7B2C\uFF14\u697D\u7AE0"
+    composerName: "\u30DE\u30FC\u30E9\u30FC"
+  - musicClip: {fileID: 8300000, guid: fc8d429bdf5484442ac7b53191e77490, type: 3}
+    musicName: "\u4EA4\u97FF\u66F2\u7B2C\uFF19\u756A\u300C\u5408\u5531\u300D"
+    composerName: "\u30D9\u30FC\u30C8\u30FC\u30F4\u30A7\u30F3"
+  - musicClip: {fileID: 8300000, guid: d2f6ac8d78e5bc14e9deb6de3fa1eab7, type: 3}
+    musicName: "\u30D0\u30EC\u30A8\u97F3\u697D\u300C\u767D\u9CE5\u306E\u6E56\u300D\u7B2C\uFF12\u5E55\u3088\u308A\u3000\u7B2C\uFF11\uFF14\u66F2"
+    composerName: "\u30C1\u30E3\u30A4\u30B3\u30D5\u30B9\u30AD\u30FC"
+  - musicClip: {fileID: 8300000, guid: 37bdb29c293cf094abb81df92423b42f, type: 3}
+    musicName: "\u30BB\u30EC\u30CA\u30FC\u30C9\u7B2C\uFF11\uFF13\u756A\u30C8\u9577\u8ABF\u300C\u30A2\u30A4\u30CD\u30FB\u30AF\u30E9\u30A4\u30CD\u30FB\u30CA\u30CF\u30C8\u30E0\u30B8\u30FC\u30AF\u300D"
+    composerName: "\u30E2\u30FC\u30C4\u30A1\u30EB\u30C8"
+  - musicClip: {fileID: 8300000, guid: 8c8d7f54b4f762645bd190ae28eba97e, type: 3}
+    musicName: "\u30F4\u30A1\u30A4\u30AA\u30EA\u30F3\u5354\u594F\u66F2\u3000\u30DB\u77ED\u8ABF"
+    composerName: "\u30E1\u30F3\u30C7\u30EB\u30B9\u30BE\u30FC\u30F3"
+  - musicClip: {fileID: 8300000, guid: fa95089a6b09feb48aa5d1e07c64793b, type: 3}
+    musicName: "\u559C\u6B4C\u5287\u300C\u5929\u56FD\u3068\u5730\u7344\u300D\u3088\u308A\uFF1C\u30AB\u30F3\u30AB\u30F3\uFF1E"
+    composerName: "\u30AA\u30C3\u30D5\u30A7\u30F3\u30D0\u30C3\u30AF"
+  - musicClip: {fileID: 8300000, guid: 248e347ba984ec947be69916adc29830, type: 3}
+    musicName: "\uFF11\uFF12\u306E\u7DF4\u7FD2\u66F2 \uFF11\uFF12.\u30CF\u77ED\u8ABF\u300C\u9769\u547D\u300D\u306E\u30A8\u30C1\u30E5\u30FC\u30C9"
+    composerName: "\u30B7\u30E7\u30D1\u30F3"
+  - musicClip: {fileID: 8300000, guid: 691c48495aa2bf6499786bdfdea676c4, type: 3}
+    musicName: "\u6B4C\u5287\u300C\u30D5\u30A3\u30AC\u30ED\u306E\u7D50\u5A5A\u300D\u5E8F\u66F2"
+    composerName: "\u30E2\u30FC\u30C4\u30A1\u30EB\u30C8"
+  - musicClip: {fileID: 8300000, guid: 352a4ef1f22bdaa409ba4ae6b4a03203, type: 3}
+    musicName: "\u718A\u8702\u306E\u98DB\u884C"
+    composerName: "\u30EA\u30E0\u30B9\u30AD\u30FC\uFF1D\u30B3\u30EB\u30B5\u30B3\u30D5"
+  - musicClip: {fileID: 8300000, guid: a2a0f6de6888e1d45970874494115bca, type: 3}
+    musicName: "\u697D\u5287\u300C\u30EF\u30EB\u30AD\u30E5\u30FC\u30EC\u300D\u3088\u308A\uFF1C\u30EF\u30EB\u30AD\u30E5\u30FC\u30EC\u306E\u9A0E\u884C\uFF1E"
+    composerName: "\u30EF\u30FC\u30B0\u30CA\u30FC"
