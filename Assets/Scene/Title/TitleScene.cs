@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-/// <summary>
-/// タイトルシーン
-/// </summary>
+
 public class TitleScene : MonoBehaviour
 {
     /// <summary>
@@ -40,18 +39,13 @@ public class TitleScene : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-        // クリックされたら
-        if (Input.GetMouseButtonDown(0))
-        {
-            // クリック処理
-            onClick();
-        }
+
     }
 }

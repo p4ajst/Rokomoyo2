@@ -2,28 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// ボタンをクリックされた時の処理
-/// </summary>
 public class ButtonClick : MonoBehaviour
 {
-    /// <summary>
-    /// タイトルシーン
-    /// </summary>
     TitleScene title = null;
-
-    /// <summary>
-    /// クリックされた時の処理
-    /// </summary>
-    /// <param name="objectName">クリックされたオブジェクトの名前</param>
     public void onClick(string objectName)
     {
         // 押されたボタンによって処理を分岐
         // ゲームスタートが押されたら
-        if("GameStartButton".Equals(objectName))
+        if ("GameStartButton".Equals(objectName))
         {
             // プレイシーンに移行する
-            title.onClick();
+            this.GameStartClick();
         }
         else
         {
@@ -34,10 +23,10 @@ public class ButtonClick : MonoBehaviour
 
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         title = new TitleScene();
-        if(title == null)
+        if (title == null)
         {
             return;
         }
@@ -45,8 +34,13 @@ public class ButtonClick : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
-		
-	}
+
+    }
+    public void GameStartClick()
+    {
+        title.onClick();
+        Debug.Log("Title Click");
+    }
 }
