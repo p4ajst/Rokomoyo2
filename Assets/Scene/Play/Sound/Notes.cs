@@ -80,6 +80,7 @@ public class Notes : MonoBehaviour
     /// </summary>
     CharacterManager charaManager;
 
+
     /// <summary>
     /// 音符の初期化
     /// </summary>

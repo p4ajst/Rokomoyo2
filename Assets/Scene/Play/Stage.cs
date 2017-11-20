@@ -50,7 +50,7 @@ public class Stage : MonoBehaviour
         else
         {
             // コルーチンを作動
-            sceneChanger.ExecuteCoroutine("Title");
+            sceneChanger.ExecuteCoroutine("Result");
             stageNum = 1;
         }
     }
