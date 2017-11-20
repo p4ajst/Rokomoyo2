@@ -23,11 +23,11 @@ GameObject:
   - component: {fileID: 23819815561235276}
   - component: {fileID: 95859181002647274}
   - component: {fileID: 114814489210450508}
-  - component: {fileID: 65872110782287370}
   - component: {fileID: 114691349179971584}
+  - component: {fileID: 64209083319284174}
   m_Layer: 0
   m_Name: AwaySounds
-  m_TagString: Untagged
+  m_TagString: Notes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,8 +84,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743331180249204}
   m_Mesh: {fileID: 4300000, guid: 702f447dce38b3243b0372d72d8b23de, type: 3}
---- !u!65 &65872110782287370
-BoxCollider:
+--- !u!64 &64209083319284174
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -94,8 +94,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7936261, y: 0.5871951, z: 1.2214315}
-  m_Center: {x: 0.10461838, y: 0.0000000062845995, z: 0.31549457}
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 702f447dce38b3243b0372d72d8b23de, type: 3}
 --- !u!95 &95859181002647274
 Animator:
   serializedVersion: 3

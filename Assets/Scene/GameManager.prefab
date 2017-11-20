@@ -51,3 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e217785eb5f7f6840b41564190c8c8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialPink: {fileID: 2100000, guid: cfff945a886842446be90304b7df2d3f, type: 2}
+  materialBlue: {fileID: 2100000, guid: 0d50945489e993449b881b49ba41858d, type: 2}
