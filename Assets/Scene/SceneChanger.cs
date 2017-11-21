@@ -15,43 +15,23 @@ using UnityEngine.UI;
 // シーン遷移に利用
 using UnityEngine.SceneManagement;
 
-
-/// <summary>
-/// シーン遷移
-/// </summary>
 public class SceneChanger : Singleton<SceneChanger> 
 {
-    /// <summary>
-    /// 赤要素
-    /// </summary>
+    // 赤要素
     private float r;
-    /// <summary>
-    /// 緑要素
-    /// </summary>
+    // 緑要素
     private float g;
-    /// <summary>
-    /// 青要素
-    /// </summary>
+    // 青要素
     private float b;
-    /// <summary>
-    /// アルファ値
-    /// </summary>
+    // アルファ値
     private float a;
-    /// <summary>
-    /// フェード中か？
-    /// </summary>
+    // フェード中か？
     private bool isFading;
-    /// <summary>
-    /// カウンタ
-    /// </summary>
+    // カウンタ
     private float cnt;
-    /// <summary>
-    /// パネルの色
-    /// </summary>
+    // パネルの色
     private Image panelImageComponent;
-    /// <summary>
-    /// 子供のパネル
-    /// </summary>
+    // 子供のパネル
     private GameObject panelPrefabChild;
 
     /// <summary>

@@ -15,7 +15,7 @@ public class USB : Gimmick {
     bool flag = false;
 
     // Use this for initialization
-    void Start () {
+    override protected void Start () {
         base.Start();
         usbA = GameObject.Find("USB/USB");
         usbB = GameObject.Find("USB/USB (1)");
@@ -23,9 +23,9 @@ public class USB : Gimmick {
         usbA_pos = GameObject.Find("USB/USB");
         usbB_pos = GameObject.Find("USB/USB (1)");
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    override protected void Update () {
 
         base.Update();
 
@@ -43,6 +43,10 @@ public class USB : Gimmick {
         {
             //移動したことを示す
             flag = true;
+
+
+            //ワープエフェクトをつける
+            GameObject.Find("USB").transform.Find("USB (1)").transform.Find("walp2").gameObject.SetActive(true);
             //プレイヤーを移動させる
             player.GetComponent<chara>().transform.position = new Vector3(usbA_pos.GetComponent<USBA>().transform.position.x, 0.6f, usbA_pos.GetComponent<USBA>().transform.position.z);
         }

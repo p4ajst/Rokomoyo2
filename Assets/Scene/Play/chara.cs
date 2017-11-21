@@ -132,7 +132,7 @@ public class chara : MonoBehaviour {
         {
             Quaternion angle = this.transform.rotation;
             float rote = angle.eulerAngles.y;
-            if(rote <= 2 && rote >= -2)
+            if(rote <= 1 && rote >= -1)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, fAway);
@@ -140,7 +140,7 @@ public class chara : MonoBehaviour {
                 this.transform.position = Vector3.Lerp(this.transform.position, fAway, time);
                 
             }
-            else if(rote <= 92 && rote >= 88)
+            else if(rote <= 91 && rote >= 89)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, rAway);
@@ -148,7 +148,7 @@ public class chara : MonoBehaviour {
                 this.transform.position = Vector3.Lerp(this.transform.position, rAway, time);
                 
             }
-            else if (rote <= 182&&rote >= 178)
+            else if (rote <= 181&&rote >= 179)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, bAway);
@@ -156,7 +156,7 @@ public class chara : MonoBehaviour {
                 this.transform.position = Vector3.Lerp(this.transform.position, bAway, time);
                 
             }
-            else if(rote <= 272 && rote >= 268)
+            else if(rote <= 271 && rote >= 269)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, lAway);
