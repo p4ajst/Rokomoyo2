@@ -26,7 +26,8 @@ public class LowBattery : Trap {
             //Debug.Log("当たっています");
 
             //プレイヤーの充電を一度だけ減らす
-            player.GetComponent<chara>().Charge -= 0.1f;
+            //player.GetComponent<chara>().Charge -= 0.1f;
+            CharacterManager.SetBattery(CharacterManager.GetBattery() - 0.1f);
 
             //減らしたらトラップを使ったというフラグを立てる
             used = true;
