@@ -728,6 +728,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114259947130539188, guid: a23e327079af7ad45b6c62f232d0d80b,
+        type: 2}
+      propertyPath: roomba
+      value: 
+      objectReference: {fileID: 1099097878}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a23e327079af7ad45b6c62f232d0d80b, type: 2}
   m_IsPrefabParent: 0
