@@ -9,14 +9,9 @@ using UnityEngine;
 /// <typeparam name="T">テンプレートのＴ</typeparam>
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    /// <summary>
-    /// インスタンス
-    /// </summary>
+    // インスタンス
     private static T instance;
-
-    /// <summary>
-    /// インスタンスのプロパティ
-    /// </summary>
+    // インスタンスのプロパティ
     public static T Instance
     {
         // 取得
