@@ -161,6 +161,37 @@ public class SoundManager : Singleton<SoundManager>
         }
     }
 
+
+    //public bool OnGUI(MusicList.MusicData data)
+    //{
+
+
+    //    ////if (type == Notes.MusicType.ATTRACT)
+    //    ////{
+    //    ////    // 曲名表示
+    //    ////    GUI.Label(new Rect(100, 625, 500, 100), attract.musicName);
+    //    ////    // 作曲者表示
+    //    ////    GUI.Label(new Rect(500, 625, 500, 100), attract.composerName);
+    //    ////}
+    //    ////else if (type == Notes.MusicType.AWAY)
+    //    ////{
+    //    ////    // 曲名表示
+    //    ////    GUI.Label(new Rect(100, 625, 500, 100), away.musicName);
+    //    ////    // 作曲者表示
+    //    ////    GUI.Label(new Rect(500, 625, 500, 100), away.composerName);
+    //    ////}
+    //    ////else
+    //    ////{
+    //    ////    // ラベルを表示
+    //    ////    GUI.Label(new Rect(100, 625, 200, 100), str);
+    //    ////    // ラベルを表示
+    //    ////    GUI.Label(new Rect(500, 625, 200, 100), str);
+    //    ////}
+    //    return true;
+    //}
+
+
+
     /// <summary>
     /// 音楽の再生
     /// </summary>
@@ -221,7 +252,6 @@ public class SoundManager : Singleton<SoundManager>
     // Use this for initialization
     void Start ()
     {
-
         // AudioSourceの初期化
         InitAudioSource();
     }

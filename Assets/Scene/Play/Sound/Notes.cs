@@ -36,22 +36,8 @@ public class Notes : MonoBehaviour
     /// <summary>
     /// 曲情報
     /// </summary>
-    //private MusicList.MusicData soundData;
-
     private MusicList.MusicData attract;
     private MusicList.MusicData away;
-
-    /// <summary>
-    /// 曲のデータのプロパティ
-    /// </summary>
-    //public MusicList.MusicData SoundData
-    //{
-    //    // 取得
-    //    get
-    //    {
-    //        return soundData;
-    //    }
-    //}
 
     public MusicList.MusicData Attract
     {
@@ -111,6 +97,8 @@ public class Notes : MonoBehaviour
                 {
                     // 音楽の再生
                     soundManager.PlayMusic();
+                    //// 表示
+                    //soundManager.OnGUI(attract);
                 }
                 else
                 {
@@ -124,6 +112,8 @@ public class Notes : MonoBehaviour
                 {
                     // 音楽の再生
                     soundManager.PlayMusic();
+                    //// 表示
+                    //soundManager.OnGUI(away);
                 }
                 else
                 {
@@ -132,17 +122,6 @@ public class Notes : MonoBehaviour
                 }
                 break;
         }
-        //// 音を再生させる
-        //if(soundManager.ChangeMusic(type, soundData))
-        //{
-        //    // 音楽の再生
-        //    soundManager.PlayMusic();
-        //}
-        //else
-        //{
-        //    // 音楽の停止
-        //    soundManager.StopMusic();
-        //}
     }
 
     /// <summary>
@@ -162,6 +141,9 @@ public class Notes : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 音符の設定
+    /// </summary>
     public void SetNote()
     {
         if(type == MusicType.ATTRACT)
@@ -173,6 +155,7 @@ public class Notes : MonoBehaviour
             GetComponent<Renderer>().material = gameManager.materialBlue;
         }
     }
+
 
     /// <summary>
     /// シーン開始時に実行される関数
