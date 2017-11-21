@@ -2421,6 +2421,111 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728953166}
   m_Mesh: {fileID: 4300036, guid: 349e2d006abb5184385fca656c02f498, type: 3}
+--- !u!1001 &732288388
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224888109592126106, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114463375029016906, guid: 089a0dfaaacdc874aa140b7e48daaccb,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u30D4\u30F3\u30AF\u8272\u306E\u97F3\u7B26\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u307F\u3088\u3046\uFF01\n\n\u30ED\u30DC\u30C3\u30C8\u304C\u305D\u306E\u97F3\u7B26\u306B\u5F15\u304D\u5BC4\u305B\u3089\u308C\u308B\u305E\uFF01\n\n\u305D\u306E\u307E\u307E\u9375\u3092\u53D6\u3063\u3066\u30B4\u30FC\u30EB\u3092\u76EE\u6307\u305D\u3046\uFF01\n\n\u30B9\u30BF\u30FC\u30C8\u3059\u308B\u306B\u306F\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 089a0dfaaacdc874aa140b7e48daaccb, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &770191583
 GameObject:
   m_ObjectHideFlags: 0

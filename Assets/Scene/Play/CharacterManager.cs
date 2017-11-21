@@ -25,6 +25,19 @@ public class CharacterManager : Singleton<CharacterManager>
     public chara roomba = null;
     GameObject player = null;
 
+    //キャラクターのバッテリー
+    public static float battery = 1.0f;
+
+    public static float GetBattery()
+    {
+        return battery;
+    }
+
+    public static void SetBattery(float _battery)
+    {
+        battery = _battery;
+    }
+
     /// <summary>
     /// 音符の設定
     /// </summary>
@@ -108,5 +121,8 @@ public class CharacterManager : Singleton<CharacterManager>
 	void Update ()
     {
         MoveCharacter();
+
+        battery -= 0.01f / 60.0f;
+        Debug.Log(battery);
     }
 }

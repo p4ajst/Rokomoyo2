@@ -33,7 +33,8 @@ public class DeathTrap : Trap {
             player.transform.position = start.transform.position;
 
             //鍵をアクティブにする
-            GameObject.Find("Key").transform.Find("Key").gameObject.SetActive(true);
+            if (GameObject.Find("Key").transform.Find("Key") == null)
+                GameObject.Find("Key").transform.Find("Key").gameObject.SetActive(true);
         }
 
         //マイクロUSBを確認しフラグが立っているのなら
