@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/// <summary>
+/// 曲リストのクラス
+/// </summary>
 public class MusicList : ScriptableObject
 {
     // インスペクタ上で編集可能
     [System.SerializableAttribute]
-    // 再生する曲のデータ
+
+    /// <summary>
+    /// 再生する曲のデータ
+    /// </summary>
     public class MusicData
     {
         // 曲のデータ
@@ -17,7 +23,10 @@ public class MusicList : ScriptableObject
         // 作曲者名
         public string composerName;
     }
-    // 曲リスト
+
+    /// <summary>
+    /// 曲リスト
+    /// </summary>
     public MusicData[] attractMusics = new MusicData[20];
     public MusicData[] awayMusics = new MusicData[20];
 }

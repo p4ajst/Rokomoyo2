@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 汎用的なクラス
+/// </summary>
 public static class Utility
 {
     /// <summary>

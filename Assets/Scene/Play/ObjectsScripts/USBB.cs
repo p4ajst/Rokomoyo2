@@ -19,6 +19,7 @@ public class USBB : Gimmick {
         //オブジェクトの上に行ったら
         if (base.OnFloor() == true && usedFlagB == false)
         {
+            Debug.Log("上にいます");
             //フラグを立てる
             usedFlagB = true;
         }

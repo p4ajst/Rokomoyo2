@@ -2,25 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/// <summary>
+/// 音符の管理を制御する
+/// </summary>
 public class SoundManager : Singleton<SoundManager>
 {
-    // 曲を再生するスピーカー
+    /// <summary>
+    /// 曲を再生するスピーカー
+    /// </summary>
     public AudioSource music = null;
 
-    // どちらの曲を再生するか
+    /// <summary>
+    /// どちらの曲を再生するか
+    /// </summary>
     public Notes.MusicType nowPlay = Notes.MusicType.NONE;
 
-
-    // 曲の情報
+    /// <summary>
+    /// 曲の情報
+    /// </summary>
     public MusicList attractMusic = null;
     public MusicList awayMusic = null;
 
-    // 設定済み曲を格納する配列
+    /// <summary>
+    /// 設定済み曲を格納する配列
+    /// </summary>
     List<AudioClip> usedAttractClips = new List<AudioClip>();
     List<AudioClip> usedAwayClips = new List<AudioClip>();
 
-    // 曲データの一時保存
+    /// <summary>
+    /// 曲データの一時保存
+    /// </summary>
     AudioClip temp = null;
 
     /// <summary>
@@ -31,12 +42,10 @@ public class SoundManager : Singleton<SoundManager>
         // コンポーネントの取得
         music = GetComponent<AudioSource>();
         // 音量の変更
-        music.volume = 0.2f;
+        music.volume = 1.0f;
         // ループを許可する
         music.loop = true;
     }
-
-
 
     /// <summary>
     /// 重複しない乱数
@@ -171,79 +180,28 @@ public class SoundManager : Singleton<SoundManager>
     }
     
 
-
-
     ///// <summary>
-    ///// 音楽の設定
+    ///// 音符の反転
     ///// </summary>
-    ///// <param name="musicType">音符のタイプ</param>
-    ///// <returns></returns>
-    //public bool SetMusic(Notes.MusicType musicType,int index)
+    //public void FlipNote()
     //{
-    //    //// 引数の値がnullだったら
-    //    //if(gameobject == null)
-    //    //{
-    //    //    // notesがnullだったら
-    //    //    if(notes == null)
-    //    //    {
-    //    //        // 関数を終了する
-    //    //        return;
-    //    //    }
-    //    //}
-
-
-    //    // 現在再生している音楽と同じ種類の音符なら
-    //    if(musicType == nowPlay)
+    //    if(nowPlay == Notes.MusicType.NONE)
     //    {
-    //        return false;
+    //        return;
     //    }
-    //    // 曲の種類によって
-    //    switch (nowPlay)
+    //    if(nowPlay == Notes.MusicType.ATTRACT)
     //    {
-    //        // 近づける音
-    //        case Notes.MusicType.ATTRACT:
-    //            // 使う曲の設定
-    //            music.clip = attractMusic.attractMusics[index].musicClip;
-    //            //// 曲の再生
-    //            //music.Play();
-    //            break;
-    //        // 遠ざける音
-    //        case Notes.MusicType.AWAY:
-    //            // 使う曲の設定
-    //            music.clip = awayMusic.awayMusics[index].musicClip;
-    //            //// 曲の再生
-    //            //music.Play();
-    //            break;
-    //        default:
-    //            break;
+    //        nowPlay = Notes.MusicType.AWAY;
     //    }
-    //    // 現在の曲のタイプを代入
-    //    nowPlay = musicType;
-    //    return true;
-    //}
-
-    ///// <summary>
-    ///// 音楽の再生
-    ///// </summary>
-    ///// <param name="type">音符のタイプ</param>
-    //public void ToggleMusic(Notes.MusicType type,int index)
-    //{
-    //    if (SetMusic(type,index))
+    //    if(nowPlay == Notes.MusicType.AWAY)
     //    {
-    //        Debug.Log("音楽を再生");
-    //        // 音楽の再生
-    //        music.Play();
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("音楽を停止");
-    //        // 曲の停止
-    //        music.Stop();
-    //        // 再生タイプを何もしないに変更
-    //        nowPlay = Notes.MusicType.NONE;
+    //        nowPlay = Notes.MusicType.ATTRACT;
     //    }
     //}
 
+    /// <summary>
+    /// シーン開始時に最初に実行される関数
+    /// </summary>
     private void Awake()
     {
         // 自分のポインタはシングルトンでなかったら
@@ -263,6 +221,7 @@ public class SoundManager : Singleton<SoundManager>
     // Use this for initialization
     void Start ()
     {
+
         // AudioSourceの初期化
         InitAudioSource();
     }

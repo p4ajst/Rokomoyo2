@@ -2,11 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// ステージに関するクラス
+/// </summary>
 public class Stage : MonoBehaviour
 {
-    // ステージシーン番号
+    /// <summary>
+    /// ステージシーン番号
+    /// </summary>
     static int stageNum = 1;
 
+    /// <summary>
+    /// ステージの遷移
+    /// </summary>
     public static void ChangeStage()
     {
         // オブジェクトを探す

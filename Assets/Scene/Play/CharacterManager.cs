@@ -2,75 +2,66 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// キャラクターの管理
+/// </summary>
 public class CharacterManager : Singleton<CharacterManager>
 {
-    // 音マネージャーのインスタンス
+
+    /// <summary>
+    /// 音マネージャーのインスタンス
+    /// </summary>
     public SoundManager sound = null;
 
-    // 音符のインスタンス
-    //public int noteNum = 0;
+    /// <summary>
+    /// 音符のインスタンス
+    /// </summary>
     private Notes note = null;
 
-    //public List<Notes> notes = new List<Notes>();
-
+    /// <summary>
     // ロボのインスタンス
-    //public chara roomba = new chara();
+    /// </summary>
     public chara roomba = null;
     GameObject player = null;
 
+    /// <summary>
+    /// 音符の設定
+    /// </summary>
+    /// <param name="notes">音符のインスタンス</param>
     public void SetNotes(Notes notes)
     {
         note = notes;
     }
 
-    // キャラクターの移動
+
+    /// <summary>
+    /// キャラクターの移動
+    /// </summary>
     public void MoveCharacter()
     {
         Debug.Log("movecharacter動いてます");
+
+
+        GameObject obj = null;
         // キャラクターを探す
         //player = GameObject.Find("Player");
 
         player = GameObject.Find("Player");
 
-
-        //// typeで指定した型の全てのオブジェクトを配列で取得し,その要素数分繰り返す.
-        //foreach (GameObject obj in Object.FindObjectsOfType(typeof(GameObject)))
-        //{
-        //    // シーン上に存在するオブジェクトならば処理.
-        //    if (obj.activeInHierarchy)
-        //    {
-        //        // GameObjectの名前を表示.
-        //        Debug.Log(obj.name);
-        //    }
-        //}
-
-        //if (sound == null)
-        //{
-        //    Debug.Log("マネージャーいないですぅ。");
-        //    return;
-        //}
-
         // シーンからサウンドマネージャーを探す
-        GameObject obj = GameObject.Find("SoundManager");
+        obj = GameObject.Find("SoundManager");
+        // サウンドマネージャーのコンポーネントを取得
         sound = obj.GetComponent<SoundManager>();
 
-        //if (note == null)
-        //{
-        //    Debug.Log("音符ないです。");
-        //    return;
-        //}
-
-        
-        //for(int i = 0;i< noteNum;i++)
-        //{
-        //    //note = note.GetComponent<Notes>();
-        //}
+        // シーンからサウンドマネージャーを探す
+        obj = GameObject.Find("SoundManager");
+        // コンポーネントを取得
+        sound = obj.GetComponent<SoundManager>();
+        // キャラクターを探す
+        player = GameObject.Find("Player");
+        // キャラクターのコンポーネントを取得
         roomba = player.GetComponent<chara>();
-        //if (roomba == null)
-        //{
-        //    Debug.Log("ロボいないです。");
-        //    //return;
-        //}
 
         // 音が鳴っているか
         if (!sound.music.isPlaying)
@@ -99,8 +90,6 @@ public class CharacterManager : Singleton<CharacterManager>
            Debug.Log("回ってる");
        }
     }
-
-
 
     // Use this for initialization
     void Start ()
